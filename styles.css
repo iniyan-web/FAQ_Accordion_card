@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.box-desktop {
+  width: 160px;
+  position: absolute;
+  top: 175px;
+  left: -78px;
+  z-index: 2;
+}
+
+.flex-container {
+  width: 840px;
+  height: 430px;
+  background-color: #fff;
+  margin: 15.6vh auto;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 20px;
+  position: relative;
+}
+
+.woman-online-desktop {
+  width: 400px;
+  position: relative;
+  top: 60px;
+  right: 72px;
+  z-index: 1;
+}
+
+.bg-pattern-desktop {
+  width: 800px;
+  position: relative;
+  top: -545px;
+  left: -470px;
+}
+
+.flex-item1 {
+  order: 1;
+  overflow: hidden;
+  flex-basis: 100%;
+}
+
+.flex-item2 {
+  order: 2;
+  padding: 50px 90px 20px 50px;
+  flex-basis: 100%;
+  overflow: auto;
+}
+
+.flex-item2 h1 {
+  font-weight: 700;
+  padding-bottom: 20px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 29px;
+}
+
+.accordian {
+  width: 100%;
+  text-align: left;
+  border-style: none;
+  background-color: #fff;
+  padding: 15px 0;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
+  color: hsl(237, 12%, 33%);
+  font-weight: 400;
+  font-family: 'Kumbh Sans', sans-serif;
+  position: relative;
+}
+
+.accordian:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+span {
+  position: absolute;
+  right: 0;
+}
+
+hr {
+  border-style: none;
+  border-bottom: 0.5px solid hsl(240, 5%, 91%);
+}
+
+.panel {
+  display: none;
+  background-color: white;
+  padding-bottom: 15px;
+  color: hsl(240, 6%, 50%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.1rem;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 500px) {
+  .flex-container {
+    flex-flow: column;
+    width: 330px;
+    height: 480px;
+    margin-top: 150px;
+  }
+
+  .flex-item1 {
+    overflow: visible;
+    flex-basis: 26%;
+  }
+
+  .flex-item2 {
+    padding: 25px 25px 0 25px;
+    flex-basis: 100%;
+  }
+
+  .flex-item2 h1 {
+    text-align: center;
+  }
+
+  .woman-online-desktop {
+    width: 250px;
+    position: absolute;
+    top: -114px;
+    right: 40px;
+    z-index: 1;
+  }
+
+  .bg-pattern-desktop {
+    width: 255px;
+    position: absolute;
+    top: -145px;
+    left: 38px;
+  }
+
+  .box-desktop {
+    width: 95px;
+    top: -39px;
+    left: 37px;
+  }
+}
